@@ -31,7 +31,8 @@ jobs:
       # Roda integração com o CHATGPT
       - name: ChatGPT Integration
         uses: kxxt/chatgpt-action@v0.3
-
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
         
       # Runs a set of commands using the runners shell
